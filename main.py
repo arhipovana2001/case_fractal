@@ -90,4 +90,33 @@ def snow_ice_1(order, size):
         ice_1(order, size)
         t.left(180)
         ice_1(order, size)
-        t.left(60)    
+        t.left(60)  
+        
+def ice_2(order, size):
+    if order == 0:
+        t.forward(size)
+    else:
+        t.pendown()
+        ice_2(order - 1, size / 2)
+        t.left(90)
+        ice_2(order - 1, size / 4)
+        t.left(180)
+        ice_2(order - 1, size / 4)
+        t.left(90)
+        ice_2(order - 1, size / 2)
+        t.penup()    
+    
+ def snow_ice_2(order, size):
+    t.color('#000080')
+    t.left(90)
+    for i in range(3):
+        ice_2(order, size)
+        t.left (180)
+        ice_2(order, size)
+        t.left(60)
+    t.right(60)
+    for i in range(3):
+        ice_2(order, size)
+        t.left(180)
+        ice_2(order, size)
+        t.left(60)
