@@ -121,7 +121,7 @@ def ice_2(order, size):
         ice_2(order, size)
         t.left(60)
         
-[13:50, 14.02.2020] Настя Макарова: def main():
+def main():
     t.speed(0)
     t.up()
     t.goto(-100, 0)
