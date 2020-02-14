@@ -120,3 +120,37 @@ def ice_2(order, size):
         t.left(180)
         ice_2(order, size)
         t.left(60)
+        
+[13:50, 14.02.2020] Настя Макарова: def main():
+    t.speed(0)
+    t.up()
+    t.goto(-100, 0)
+    t.down()
+
+    choice = int(input(lc.INP_3))
+    n = int(input(lc.INP_1))
+    a = int(input(lc.INP_2))
+
+    if choice == 1:
+        koch(n, a)
+    elif choice == 2:
+        snow_koch(n, a)
+    elif choice == 3:
+        ice_1(n, a)
+    elif choice == 4:
+        ice_2(n, a)
+    elif choice == 5:
+        snow_ice_1(n, a)
+    elif choice == 6:
+        snow_ice_2(n, a)
+    elif choice == 7:
+        mink(n, a)
+    elif choice == 8:
+        levy(n, a)
+    #elif choice == 9:
+    #   tree(n, a)
+    #elif choice == 10:
+    #    dragon(n, a)
+    t.done()
+main()
+
