@@ -113,9 +113,9 @@ def ice_2(order, size):
         ice_2(order - 1, size / 4)
         t.left(90)
         ice_2(order - 1, size / 2)
-        t.penup()    
+        t.penup()
     
- def snow_ice_2(order, size):
+def snow_ice_2(order, size):
     t.color('#000080')
     t.left(90)
     for i in range(3):
@@ -129,8 +129,7 @@ def ice_2(order, size):
         t.left(180)
         ice_2(order, size)
         t.left(60)
-    
-t.left(90)    
+
 def tree(order, size):
     t.color('#FF1493')
     if order < 1:
@@ -141,7 +140,7 @@ def tree(order, size):
         t.right(30)
         tree(order * 0.75, size / 5)
         t.left(60)
-        tree(order * 0.75, size/ 5)
+        tree(order * 0.75, size / 5)
         t.right(30)
         t.bk(order * 15 )
         
@@ -172,7 +171,8 @@ def main():
     elif choice == 8:
         levy(n, a)
     elif choice == 9:
-       tree(n, a)
+        t.left(90)
+        tree(n, a)
     t.done()
 main()
 
