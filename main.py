@@ -1,3 +1,12 @@
+#fractal case
+
+#this program is designed to draw fractals.
+#the program prompts the user to select the desired fractal, depth of the recursion and length of the side.
+
+# Developers:   Arhipova A. (%),
+#               Revtova L. (%),
+#               Zaitseva A.   (%).
+
 import turtle as t
 import local
 choose = int(input(local.CHOOSE))
