@@ -129,8 +129,10 @@ def ice_2(order, size):
         t.left(180)
         ice_2(order, size)
         t.left(60)
-        
+    
+t.left(90)    
 def tree(order, size):
+    t.color('#FF1493')
     if order < 1:
         t.forward(size)
     else:
@@ -142,7 +144,6 @@ def tree(order, size):
         tree(order * 0.75, size/ 5)
         t.right(30)
         t.bk(order * 15 )
-tree(order, size)
         
 def main():
     t.speed(0)
