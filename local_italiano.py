@@ -10,5 +10,4 @@ INP_3 = '''Seleziona una forma:
 6 - Fiocco di neve al frattale del ghiaccio 2
 7 - Curva di Minkowski
 8 - Levy Curve
-9 - Albero
-10 - Drago '''
+9 - Albero'''

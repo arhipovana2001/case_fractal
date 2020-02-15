@@ -3,9 +3,9 @@
 #this program is designed to draw fractals.
 #the program prompts the user to select the desired fractal, depth of the recursion and length of the side.
 
-# Developers:   Arhipova A. (%),
-#               Revtova L. (%),
-#               Zaitseva A.   (%).
+# Developers:   Arhipova A. (60%),
+#               Revtova L. (55%),
+#               Zaitseva A. (45%).
 
 import turtle as t
 import local
@@ -173,8 +173,6 @@ def main():
         levy(n, a)
     elif choice == 9:
        tree(n, a)
-    #elif choice == 10:
-    #    dragon(n, a)
     t.done()
 main()
 

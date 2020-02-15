@@ -10,5 +10,4 @@ INP_3 = '''Select a shape:
 6 - Snowflake to the ice fractal 2
 7 - Minkowski curve
 8 - Levy Curve
-9 - Tree
-10 - Dragon '''
+9 - Tree'''
