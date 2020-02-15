@@ -130,6 +130,20 @@ def ice_2(order, size):
         ice_2(order, size)
         t.left(60)
         
+def tree(order, size):
+    if order < 1:
+        t.forward(size)
+    else:
+        t.pendown()
+        t.forward(order * 15)
+        t.right(30)
+        tree(order * 0.75, size / 5)
+        t.left(60)
+        tree(order * 0.75, size/ 5)
+        t.right(30)
+        t.bk(order * 15 )
+tree(order, size)
+        
 def main():
     t.speed(0)
     t.up()
@@ -156,8 +170,8 @@ def main():
         mink(n, a)
     elif choice == 8:
         levy(n, a)
-    #elif choice == 9:
-    #   tree(n, a)
+    elif choice == 9:
+       tree(n, a)
     #elif choice == 10:
     #    dragon(n, a)
     t.done()
